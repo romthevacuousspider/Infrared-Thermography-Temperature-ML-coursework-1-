@@ -90,9 +90,7 @@ For the classification task, we are going to use:
 	- On random forest-selected features
     
 The random forest-selected features are the features whose importance value is above a specific threshold after the random search on the random forest model. As we present later in the notebook our data is imbalanced in terms of having fever or not, therefore we used stratified sampling so that the ratio of each sample in training and test set be equal and minimize the model tendency to learn the larger class. Furthermore, data are normalized as it is essential for some models such as neural networks. In the end, we will find the best model for each task based on its performance on the validation set.
-## 1.3. Importing Essentials
-All the essential libraries for our project can be imported by the next cell. However, for not running the codes from the beginning of the notebook, I also imported some libraries concerning the cell.
 
-## 1.4. Importing Dataset
+## 1.4. Dataset
 
 The dataset is available on [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset) and based on their description "The Infrared Thermography Temperature Dataset contains temperatures read from various locations of inferred images about patients, with the addition of oral temperatures measured for each individual. The 33 features consist of gender, age, ethnicity, ambient temperature, humidity, distance, and other temperature readings from the thermal images. The dataset is intended to be used in a regression task to predict the oral temperature using the environment information as well as the thermal image readings."
